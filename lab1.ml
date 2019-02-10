@@ -297,7 +297,7 @@ let computus_day (year : int) : int =
   let k = c mod 4 in
   let l = (32 + 2 * e + 2 * i - h - k) mod 7 in
   let m = (a + 11 * h + 22 * l) / 451 in
-  1+ ((h + l - 7 * m + 114) mod 31) ;; ;;
+  ((h + l - 7 * m + 114) mod 31) +1 ;;
 
 (*======================================================================
 Part 4: Utilizing recursion
